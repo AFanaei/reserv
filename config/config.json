@@ -1,0 +1,23 @@
+{
+	"dev":{
+		"address":{
+			"base":"http://dining.sharif.ir",
+			"home": "/",
+			"login": "/login",
+			"deliveray":"delivery_id"
+		},
+		"delivery":{
+			"self_pesar": 2,
+			"tarasht3":3,
+			"mosala":4,
+			"roshan":5,
+			"vezvaei":7,
+			"azadi":9,
+			"12vahedi":10,
+			"6vahedi":13,
+			"isatis":16,
+			"poonak":17,
+			"shadman":18
+		}
+	}
+}
