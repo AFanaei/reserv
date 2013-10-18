@@ -1,11 +1,11 @@
 var robot = require("./robot");
+var parser = require("./parser");
 var fs = require("fs");
 
 robot.login(function(err,result,body){
-	//fs.writeFile("web.txt", body );
 	console.log(result.statusCode);
-	var regex = /<table id="datagrid">(.|\n)*?<\/table>/;
-	var str ='<table id="datagrid">salam</table>';
-	var result = body.match(regex);
-	console.log(result[0]);
+	parser.getDatesAndNames(body,function(err,result){
+		if(err) throw err;
+		console.log(result);
+	});
 });
